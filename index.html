@@ -1,627 +1,259 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Calendar Converter</title>
+    <title>Privacy Policy - سياسة الخصوصية</title>
     <style>
+        /* إعدادات الألوان المتكيفة مع ثيم الجهاز (فاتح/داكن) */
         :root {
-            --primary-color: #2c3e50;
-            --text-color: #34495e;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --border-color: #e2e8f0;
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --link-color: #0066cc;
+            --heading-color: #111111;
+            --border-color: #eeeeee;
         }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #e0e0e0;
+                --link-color: #66b2ff;
+                --heading-color: #ffffff;
+                --border-color: #333333;
+            }
+        }
+
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
             padding: 20px;
+            margin: 0;
         }
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+        h1, h2, h3 {
+            color: var(--heading-color);
+            margin-top: 24px;
         }
-        h1 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 12px;
-            font-size: 24px;
-        }
-        h2 {
-            color: var(--primary-color);
-            font-size: 18px;
-            margin-top: 28px;
-        }
-        ul {
-            padding-inline-start: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .meta-info {
-            background-color: #edf2f7;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 14px;
-            margin-bottom: 24px;
-        }
-        a {
-            color: #3182ce;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .lang-section {
+
+        h1 { font-size: 1.5rem; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; }
+        h2 { font-size: 1.25rem; }
+        
+        a { color: var(--link-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        hr { border: 0; border-top: 1px solid var(--border-color); margin: 20px 0; }
+
+        /* إخفاء جميع اللغات افتراضياً */
+        .lang-content {
             display: none;
         }
-        [dir="rtl"] {
-            text-align: right;
+
+        /* إظهار اللغة المفعلة فقط */
+        .lang-content.active {
+            display: block;
         }
+
+        ul { padding-inline-start: 20px; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="card">
-        
-        <!-- ======================================================== -->
-        <!-- 1. ARABIC (ar) -->
-        <!-- ======================================================== -->
-        <div id="lang-ar" class="lang-section">
-            <h1>سياسة الخصوصية لتطبيق محوّل التاريخ الهجري/الميلادي (Calendar Converter)</h1>
-            <div class="meta-info">
-                <strong>رقم الإصدار:</strong> 2.0.0<br>
-                <strong>آخر تحديث:</strong> 31 مايو 2026
-            </div>
-            <p>توضح سياسة الخصوصية هذه كيفية جمع واستخدام وحماية المعلومات عند استخدامك لتطبيق <strong>محوّل التاريخ الهجري/الميلادي</strong> (اسم الحزمة: <code>com.dbs.dateconverter</code>).</p>
-            
-            <h2>1. معلومات عامة وهويتنا</h2>
-            <ul>
-                <li><strong>مطور التطبيق والمتحكم بالبيانات:</strong> [نيرام / naram3096@gmail.com]</li>
-                <li><strong>هوية التطبيق:</strong> <code>com.dbs.dateconverter</code></li>
-                <li><strong>الحسابات:</strong> لا يتطلب التطبيق إنشاء أي حساب أو تسجيل دخول.</li>
-                <li><strong>البيانات التي لا نجمعها:</strong> لا نجمع الاسم، البريد، الهاتف، أو الموقع الجغرافي (GPS).</li>
-            </ul>
+    <!-- ============================================== -->
+    <!-- 1. النسخة العربية (AR) -->
+    <!-- ============================================== -->
+    <div id="content-ar" class="lang-content" dir="rtl">
+        <h1>سياسة الخصوصية وتأكيد سلامة البيانات</h1>
+        <p><strong>تطبيق محوّل التاريخ الهجري/الميلادي</strong><br>
+        <strong>اسم الحزمة:</strong> <code>com.dbs.dateconverter</code><br>
+        <strong>الإصدار:</strong> 2.0.0<br>
+        <strong>تاريخ آخر تحديث:</strong> 31 مايو 2026</p>
 
-            <h2>2. البيانات المخزنة محلياً على الجهاز</h2>
-            <p>يستخدم التطبيق التخزين المحلي عبر <code>SharedPreferences</code> ولا يتم رفعها لخوادمنا أبداً، وتشمل:</p>
-            <ul>
-                <li>اختيار اللغة (13 لغة + النظام).</li>
-                <li>اختيار الثيم (فاتح / داكن / تلقائي).</li>
-                <li>ذاكرة تخزين تقويم المناسبات الإسلامية.</li>
-                <li>عداد تشغيل التطبيق لطلب التقييم وتاريخ آخر طلب.</li>
-            </ul>
+        <p>نحن نقدر خصوصيتك تماماً. تم إعداد هذه السياسة لمساعدتك في فهم طبيعة البيانات التي يتعامل معها التطبيق. باستخدامك للتطبيق، فإنك توافق على الممارسات الواردة في هذه السياسة.</p>
 
-            <h2>3. خدمات الطرف الثالث وتحليل البيانات (Android فقط)</h2>
-            <ul>
-                <li><strong>Firebase Analytics:</strong> يجمع تفاعل المستخدمين مع الشاشات (<code>holidays_tab</code>, <code>converter_tab</code>, <code>settings</code>, <code>occasions_browser</code>). تعطل في وضع Debug.</li>
-                <li><strong>Firebase Crashlytics:</strong> يجمع تقارير الأعطال و stack traces لمعالجة المشاكل.</li>
-                <li><strong>Firebase Remote Config:</strong> لجلب رابط سياسة الخصوصية وتحديثه عن بعد.</li>
-            </ul>
+        <h2>1. معلومات عامة وهوية التطبيق</h2>
+        <ul>
+            <li><strong>هوية التطبيق:</strong> أداة تتيح تحويل التواريخ بين التقويمين الهجري والميلادي وتصفح المناسبات.</li>
+            <li><strong>بدون حسابات:</strong> لا يتطلب التطبيق أي تسجيل دخول.</li>
+            <li><strong>البيانات التي لا نجمعها:</strong> التطبيق لا يجمع أي بيانات شخصية (الاسم، البريد، الهاتف، GPS).</li>
+            <li><strong>التواصل:</strong> [naram3096@gmail.com]</li>
+        </ul>
 
-            <h2>4. الإعلانات — Google AdMob</h2>
-            <p>يعرض التطبيق إعلانات لدعم استمراريته المجانية وتشمل: إعلان App Open، وإعلانات Interstitial، وإعلانات Rewarded Interstitial قبل المشاركة، وإعلانات Native في شاشة المناسبات.</p>
-            <ul>
-                <li><strong>البيانات المجمعة:</strong> معرف الإعلان، الـ IP، نوع الجهاز، ونظام التشغيل.</li>
-                <li><strong>موافقة المستخدم:</strong> يتم استخدام نظام UMP لجمع موافقات الإعلانات المخصصة طبقاً لقانون GDPR.</li>
-                <li><a href="https://policies.google.com/technologies/ads" target="_blank">سياسة إعلانات Google</a>.</li>
-            </ul>
+        <h2>2. البيانات المخزنة محلياً على الجهاز</h2>
+        <p>يستخدم التطبيق <code>SharedPreferences</code> لتخزين البيانات محلياً على جهازك فقط:</p>
+        <ul>
+            <li>اختيار اللغة والثيم (فاتح/داكن).</li>
+            <li>ذاكرة تخزين المناسبات وعداد طلب التقييم.</li>
+        </ul>
 
-            <h2>5. الخدمات والواجهات الخارجية</h2>
-            <ul>
-                <li><strong>AlAdhan API:</strong> لجلب تقويم السنة الميلادية بدون أي بيانات شخصية.</li>
-                <li><strong>Google Fonts:</strong> قد يرسل الـ IP لـ Google لتحميل الخطوط.</li>
-                <li><strong>Wikipedia:</strong> يفتح داخل WebView وتخضع لسياسة ويكيبيديا المنفصلة.</li>
-                <li><strong>صلاحيات محلية:</strong> استخدام Google Play In-App Review والمشاركة والنسخ للحافظة (Clipboard) محلياً.</li>
-            </ul>
+        <h2>3. خدمات Firebase (Android)</h2>
+        <ul>
+            <li><strong>Analytics:</strong> للإحصائيات العامة المجمعة.</li>
+            <li><strong>Crashlytics:</strong> لإرسال تقارير الأعطال التقنية لتحسين التطبيق.</li>
+            <li><strong>Remote Config:</strong> لجلب الإعدادات عن بُعد.</li>
+        </ul>
 
-            <h2>6. الإشعارات والصلاحيات والإنترنت</h2>
-            <ul>
-                <li><strong>الإشعارات المحلية:</strong> تستخدم المنطقة الزمنية للجهاز (وليس GPS) لجدولة مناسبات رمضان والأعياد، وتتطلب صلاحية <code>POST_NOTIFICATIONS</code>.</li>
-                <li><strong>الصلاحيات المطلوبة:</strong> <code>INTERNET</code> · <code>ACCESS_NETWORK_STATE</code> · <code>RECEIVE_BOOT_COMPLETED</code> · <code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code>.</li>
-                <li><strong>الاتصال:</strong> التحويل الأساسي يعمل بدون إنترنت لوجود ملف مناسبات مدمج (<code>embedded_occasions.json</code>)، الإنترنت مطلوب فقط للمزامنة والإعلانات.</li>
-            </ul>
+        <h2>4. الإعلانات — Google AdMob</h2>
+        <p>نستخدم إعلانات AdMob (شاشة الفتح، بينية، مدمجة). تقوم Google بجمع معرّف الإعلانات (Advertising ID)، عنوان IP، ونوع الجهاز. نستخدم نموذج موافقة Google (UMP) للامتثال لسياسات البيانات.</p>
 
-            <h2>7. حقوق المستخدم والقانون</h2>
-            <p>يمكنك حذف كافة البيانات بمسح بيانات التطبيق. نحن لا نجمع بيانات الأطفال دون سن 13 عاماً. قد يتم نقل البيانات عبر خوادم Google دولياً. للتواصل: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
+        <h2>5. خدمات الأطراف الثالثة</h2>
+        <ul>
+            <li><strong>AlAdhan API:</strong> لجلب تقويم السنة (بدون بيانات شخصية).</li>
+            <li><strong>Google Fonts:</strong> لتحميل الخطوط (قد يرسل IP لـ Google).</li>
+            <li><strong>Wikipedia:</strong> لعرض المعلومات في WebView (تخضع لسياسة ويكيميديا).</li>
+        </ul>
 
-        <!-- ======================================================== -->
-        <!-- 2. ENGLISH (en) -->
-        <!-- ======================================================== -->
-        <div id="lang-en" class="lang-section">
-            <h1>Privacy Policy for Calendar Converter App</h1>
-            <div class="meta-info">
-                <strong>Version:</strong> 2.0.0<br>
-                <strong>Last Updated:</strong> May 31, 2026
-            </div>
-            <p>This Privacy Policy outlines how information is handled within the <strong>Calendar Converter</strong> application (Package Name: <code>com.dbs.dateconverter</code>).</p>
-            
-            <h2>1. General & Identity</h2>
-            <ul>
-                <li><strong>Developer/Data Controller:</strong> naram3096@gmail.com</li>
-                <li><strong>No Accounts:</strong> No registration or user login is required.</li>
-                <li><strong>Data We Do NOT Collect:</strong> We do not collect names, emails, phone numbers, or GPS location data.</li>
-            </ul>
-
-            <h2>2. On-Device Local Storage</h2>
-            <p>Data is stored strictly locally via <code>SharedPreferences</code> and is never transmitted to our servers:</p>
-            <ul>
-                <li>Language selection (13 languages + system language).</li>
-                <li>Theme selection (Light / Dark / System default).</li>
-                <li>Cached Islamic occasions calendar database.</li>
-                <li>App open counters and last review request timestamps.</li>
-            </ul>
-
-            <h2>3. Third-Party Services (Android Only)</h2>
-            <ul>
-                <li><strong>Firebase Analytics:</strong> Tracks screen logs (<code>holidays_tab</code>, <code>converter_tab</code>, <code>settings</code>, <code>occasions_browser</code>). Automatically disabled in Debug mode.</li>
-                <li><strong>Firebase Crashlytics:</strong> Collects stack traces and hardware parameters to troubleshoot errors.</li>
-                <li><strong>Firebase Remote Config:</strong> Remotely fetches the application's active privacy policy URL.</li>
-            </ul>
-
-            <h2>4. Advertisements — Google AdMob</h2>
-            <p>Integrates App Open, Interstitial, Rewarded Interstitial (optional before sharing), and Native ads within the occasions dashboard.</p>
-            <ul>
-                <li><strong>Data Collected:</strong> Advertising ID, IP address, device type, and OS version.</li>
-                <li><strong>Consent Management:</strong> Personalized ad tracking consent is obtained via Google UMP SDK (compliant with GDPR).</li>
-                <li><a href="https://policies.google.com/technologies/ads" target="_blank">Google Ads Policy</a>.</li>
-            </ul>
-
-            <h2>5. External Integrations</h2>
-            <ul>
-                <li><strong>AlAdhan API:</strong> Synchronizes Gregorian calendar arrays without processing any personal metrics.</li>
-                <li><strong>Google Fonts:</strong> Requests typeface designs (may expose your IP address to Google).</li>
-                <li><strong>Wikipedia WebView:</strong> Links display historical facts subject to Wikipedia's standalone privacy policies.</li>
-                <li><strong>Local Utilities:</strong> Implements Google Play In-App Reviews, sharing intents, and local clipboard actions.</li>
-            </ul>
-
-            <h2>6. Notifications, Permissions & Offline Execution</h2>
-            <ul>
-                <li><strong>Local Notifications:</strong> Schedules reminders for Ramadan and Eids based on system time zone (not GPS). Requires <code>POST_NOTIFICATIONS</code>.</li>
-                <li><strong>System Permissions:</strong> <code>INTERNET</code> · <code>ACCESS_NETWORK_STATE</code> · <code>RECEIVE_BOOT_COMPLETED</code> · <code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code>.</li>
-                <li><strong>Connectivity:</strong> Conversion utilities work 100% offline via <code>embedded_occasions.json</code>. Internet is needed only for ads and calendar refreshes.</li>
-            </ul>
-
-            <h2>7. Rights & Legal Compliance</h2>
-            <p>Wiping app storage purges all data instantly. We do not target or harvest data from children under 13. Data is processed globally over Google nodes. For inquiries: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 3. INDONESIAN (id) -->
-        <!-- ======================================================== -->
-        <div id="lang-id" class="lang-section">
-            <h1>Kebijakan Privasi untuk Aplikasi Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>Versi:</strong> 2.0.0<br>
-                <strong>Pembaruan Terakhir:</strong> 31 Mei 2026
-            </div>
-            <p>Kebijakan Privasi ini menjelaskan penanganan data pada aplikasi Calendar Converter (<code>com.dbs.dateconverter</code>).</p>
-            
-            <h2>1. Umum & Identitas</h2>
-            <ul>
-                <li><strong>Pengembang/Pengendali Data:</strong> naram3096@gmail.com</li>
-                <li><strong>Tanpa Akun:</strong> Tidak memerlukan registrasi atau pendaftaran akun.</li>
-                <li><strong>Data Yang TIDAK Dikumpulkan:</strong> Nama, email, nomor telepon, atau lokasi GPS.</li>
-            </ul>
-
-            <h2>2. Penyimpanan Lokal di Perangkat</h2>
-            <p>Disimpan di perangkat Anda melalui <code>SharedPreferences</code> dan tidak pernah diunggah ke server kami:</p>
-            <ul>
-                <li>Pilihan bahasa (13 bahasa + bahasa sistem).</li>
-                <li>Pilihan tema (Terang / Gelap / Otomatis).</li>
-                <li>Penyimpanan cache data kalender acara Islam.</li>
-                <li>Penghitung peluncuran aplikasi untuk permintaan ulasan.</li>
-            </ul>
-
-            <h2>3. Layanan Pihak Ketiga (Khusus Android)</h2>
-            <ul>
-                <li><strong>Firebase Analytics:</strong> Melacak tayangan layar (<code>holidays_tab</code>, <code>converter_tab</code>, <code>settings</code>, <code>occasions_browser</code>). Dinonaktifkan pada mode Debug.</li>
-                <li><strong>Firebase Crashlytics:</strong> Mengumpulkan laporan kerusakan untuk perbaikan sistem.</li>
-                <li><strong>Firebase Remote Config:</strong> Mengambil tautan kebijakan privasi secara dinamis.</li>
-            </ul>
-
-            <h2>4. Iklan — Google AdMob</h2>
-            <p>Menampilkan iklan App Open, Interstitial, Rewarded Interstitial sebelum berbagi, dan Native Ads.</p>
-            <ul>
-                <li><strong>Data yang Dikumpulkan:</strong> ID Iklan, alamat IP, tipe perangkat, dan OS.</li>
-                <li><strong>Persetujuan:</strong> Menggunakan Google UMP SDK untuk mematuhi regulasi iklan terpersonalisasi (seperti GDPR).</li>
-                <li><a href="https://policies.google.com/technologies/ads" target="_blank">Kebijakan Iklan Google</a>.</li>
-            </ul>
-
-            <h2>5. Integrasi Eksternal & Hak Pengguna</h2>
-            <p>Menggunakan <strong>AlAdhan API</strong> untuk sinkronisasi kalender tanpa data pribadi, <strong>Google Fonts</strong>, dan <strong>Wikipedia WebView</strong>. Notifikasi lokal dijadwalkan berdasarkan zona waktu perangkat (bukan GPS) dan memerlukan izin <code>POST_NOTIFICATIONS</code> beserta izin alarm tepat (<code>SCHEDULE_EXACT_ALARM</code>). Fungsi konversi dasar berfungsi sepenuhnya offline berkat <code>embedded_occasions.json</code>. Menghapus instalan atau menghapus data aplikasi akan memusnahkan semua preferensi. Hubungi kami: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 4. MALAY (ms) -->
-        <!-- ======================================================== -->
-        <div id="lang-ms" class="lang-section">
-            <h1>Dasar Privasi untuk Aplikasi Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>Versi:</strong> 2.0.0<br>
-                <strong>Kemas Kini Terakhir:</strong> 31 Mei 2026
-            </div>
-            <p>Dasar Privasi ini merangkumi pengendalian maklumat di dalam aplikasi Calendar Converter (<code>com.dbs.dateconverter</code>).</p>
-            
-            <h2>1. Am & Identiti</h2>
-            <ul>
-                <li><strong>Pembangun/Pengawal Data:</strong> naram3096@gmail.com</li>
-                <li><strong>Tiada Akaun:</strong> Log masuk atau pendaftaran pengguna tidak diperlukan.</li>
-                <li><strong>Data TIDAK Dikumpul:</strong> Nama, e-mel, nombor telefon, atau kedudukan GPS.</li>
-            </ul>
-
-            <h2>2. Penyimpanan Tempatan Peranti</h2>
-            <p>Data disimpan secara tempatan melalui <code>SharedPreferences</code> dan tidak dihantar ke pelayan kami:</p>
-            <ul>
-                <li>Pilihan bahasa (13 bahasa + bahasa sistem).</li>
-                <li>Pilihan tema (Cerah / Gelap / Auto).</li>
-                <li>Cache pangkalan data kalender acara Islam.</li>
-                <li>Kaunter peluncuran aplikasi dan rekod ulasan.</li>
-            </ul>
-
-            <h2>3. Perkhidmatan Pihak Ketiga (Android Sahaja)</h2>
-            <ul>
-                <li><strong>Firebase Analytics & Crashlytics:</strong> Menjejak log skrin (<code>holidays_tab</code>, <code>converter_tab</code>, <code>settings</code>) dan mengumpul laporan kerosakan perisian. Dimatikan dalam mod Debug.</li>
-                <li><strong>Firebase Remote Config:</strong> Mengambil pautan dasar privasi secara dalam talian.</li>
-                <li><strong>Google AdMob:</strong> Memaparkan iklan App Open, Interstitial, Rewarded, dan Native. Mengumpul ID Iklan, IP, dan jenis OS menggunakan SDK UMP Google untuk privasi GDPR.</li>
-            </ul>
-
-            <h2>4. Notifikasi & Kebenaran</h2>
-            <p>Notifikasi tempatan (Ramadan/Hari Raya) menggunakan zon waktu peranti (bukan GPS). Memerlukan kebenaran <code>INTERNET</code>, <code>POST_NOTIFICATIONS</code>, <code>RECEIVE_BOOT_COMPLETED</code>, dan <code>SCHEDULE_EXACT_ALARM</code>. Penukaran asas berfungsi tanpa internet melalui <code>embedded_occasions.json</code>. Anda boleh memadam semua data dengan mengosongkan storan aplikasi. Hubungi: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 5. BENGALI (bn) -->
-        <!-- ======================================================== -->
-        <div id="lang-bn" class="lang-section">
-            <h1>গোপনীয়তা নীতি - Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>সংস্করণ:</strong> 2.0.0<br>
-                <strong>সর্বশেষ আপডেট:</strong> ৩১ মে, ২০২৬
-            </div>
-            <p>Calendar Converter (<code>com.dbs.dateconverter</code>) অ্যাপ্লিকেশনের গোপনীয়তা নীতি নিচে বর্ণনা করা হলো।</p>
-            
-            <h2>১. সাধারণ তথ্য ও পরিচয়</h2>
-            <ul>
-                <li><strong>ডেভেলপার/ডাটা নিয়ন্ত্রক:</strong> naram3096@gmail.com</li>
-                <li><strong>কোনো অ্যাকাউন্ট নেই:</strong> অ্যাপটি ব্যবহারের জন্য কোনো লগইন বা রেজিস্ট্রেশনের প্রয়োজন নেই।</li>
-                <li><strong>সংগ্রহ না করা তথ্য:</strong> আমরা নাম, ইমেল, ফোন নম্বর বা জিপিএস (GPS) অবস্থান সংগ্রহ করি না।</li>
-            </ul>
-
-            <h2>২. অন-ডিভাইস স্থানীয় স্টোরেজ</h2>
-            <p>সব তথ্য <code>SharedPreferences</code> এর মাধ্যমে আপনার ডিভাইসে সংরক্ষিত থাকে এবং আমাদের সার্ভারে পাঠানো হয় না:</p>
-            <ul>
-                <li>ভাষা নির্বাচন (১৩টি ভাষা + সিস্টেম ভাষা)।</li>
-                <li>থিম নির্বাচন (লাইট / ডার্ক / সিস্টেম ডিফল্ট)।</li>
-                <li>ইসলামিক ইভেন্ট ক্যালেন্ডার ক্যাশ ডাটাবেস।</li>
-                <li>অ্যাপ রিভিউ অনুরোধ ট্র্যাকিং কাউন্টার।</li>
-            </ul>
-
-            <h2>৩. তৃতীয় পক্ষের পরিষেবা (শুধুমাত্র অ্যান্ড্রয়েড)</h2>
-            <ul>
-                <li><strong>Firebase Analytics & Crashlytics:</strong> অ্যাপের স্ক্রিন ভিউ (<code>holidays_tab</code>, <code>converter_tab</code>) এবং ক্র্যাশ রিপোর্ট ট্র্যাক করে। ডিবাগ মোডে এটি নিষ্ক্রিয় থাকে।</li>
-                <li><strong>Google AdMob:</strong> অ্যাপ ওপেন, ইন্টারস্টিশিয়াল, রিওয়ার্ডেড এবং নেটিভ বিজ্ঞাপন দেখায়। এটি অ্যাডভার্টাইজিং আইডি, আইপি এবং ওএস তথ্য সংগ্রহ করে। GDPR সম্মতির জন্য Google UMP SDK ব্যবহৃত হয়।</li>
-                <li><strong>AlAdhan API & Wikipedia:</strong> ক্যালেন্ডার সিঙ্ক (ব্যক্তিগত তথ্য ছাড়া) এবং তথ্য প্রদর্শনের জন্য ব্যবহৃত হয়।</li>
-            </ul>
-
-            <h2>৪. নোটিফিকেশন ও পারমিশন</h2>
-            <p>লোকাল নোটিফিকেশন জিপিএস ছাড়াই ডিভাইসের টাইম জোন অনুযায়ী কাজ করে। প্রয়োজনীয় অনুমতিসমূহ: <code>INTERNET</code>, <code>POST_NOTIFICATIONS</code>, <code>RECEIVE_BOOT_COMPLETED</code>, এবং <code>SCHEDULE_EXACT_ALARM</code>। অ্যাপের মূল রূপান্তর ফিচারটি <code>embedded_occasions.json</code> ফাইলের মাধ্যমে সম্পূর্ণ অফলাইনে কাজ করে। তথ্য মুছতে অ্যাপ ডাটা ক্লিয়ার করুন। যোগাযোগ: <strong>naram3096@gmail.com</strong>।</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 6. URDU (ur) -->
-        <!-- ======================================================== -->
-        <div id="lang-ur" class="lang-section">
-            <h1>پرائیویسی پالیسی - Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>ورژن:</strong> 2.0.0<br>
-                <strong>آخری اپ ڈیٹ:</strong> 31 مئی 2026
-            </div>
-            <p>یہ پرائیویسی پالیسی ایپلیکیشن Calendar Converter (<code>com.dbs.dateconverter</code>) کے ڈیٹا کے استعمال کی وضاحت کرتی ہے۔</p>
-            
-            <h2>1. عمومی معلومات اور شناخت</h2>
-            <ul>
-                <li><strong>ڈویلپر/ڈیٹا کنٹرولر:</strong> naram3096@gmail.com</li>
-                <li><strong>کوئی اکاؤنٹ نہیں:</strong> ایپلیکیشن کو استعمال کرنے کے لیے لاگ ان کی ضرورت نہیں ہے۔</li>
-                <li><strong>ڈیٹا جو جمع نہیں کیا جاتا:</strong> ہم نام، ای میل، فون نمبر، یا جی پی ایس (GPS) لوکیشن جمع نہیں کرتے۔</li>
-            </ul>
-
-            <h2>2. ڈیوائس پر مقامی اسٹوریج</h2>
-            <p>ڈیٹا مکمل طور پر <code>SharedPreferences</code> کے ذریعے مقامی طور پر محفوظ ہوتا ہے اور ہمارے سرور پر نہیں بھیجا جاتا:</p>
-            <ul>
-                <li>زبان کا انتخاب (13 زبانیں + سسٹم ڈیفالٹ)۔</li>
-                <li>تہم کا انتخاب (لائٹ / ڈارک / آٹو)۔</li>
-                <li>اسلامی مناسبتوں کے کیلنڈر کا لوکل کیشے۔</li>
-                <li>ایپلی کیشن ریٹنگ کا کاؤنٹر اور آخری بار کی درخواست کا وقت۔</li>
-            </ul>
-
-            <h2>3. تھرڈ پارٹی سروسز (صرف اینڈرائیڈ)</h2>
-            <ul>
-                <li><strong>Firebase Analytics & Crashlytics:</strong> اسکرینز (<code>holidays_tab</code>, <code>converter_tab</code>, <code>settings</code>) کی مانیٹرنگ اور خرابیوں کی رپورٹ جمع کرتا ہے۔ ڈیبگ موڈ میں یہ بند ہوتا ہے۔</li>
-                <li><strong>Google AdMob:</strong> اشتہارات (App Open, Interstitial, Native) دکھانے کے لیے استعمال ہوتا ہے۔ یہ ایڈورٹائزنگ آئی ڈی، آئی پی ایڈریس اور او ایس کی معلومات جمع کر سکتا ہے۔ یہ GDPR قوانین کے تحت UMP SDK کا استعمال کرتا ہے۔</li>
-            </ul>
-
-            <h2>4. نوٹیفیکیشنز اور اجازتیں</h2>
-            <p>لوکل نوٹیفیکیشنز جی پی ایس کے بجائے ڈیوائس کے ٹائم زون پر کام کرتے ہیں۔ مطلوبہ اجازتیں: <code>INTERNET</code>، <code>POST_NOTIFICATIONS</code>، <code>RECEIVE_BOOT_COMPLETED</code>، اور <code>SCHEDULE_EXACT_ALARM</code>۔ بنیادی ہجری تبدیلیاں <code>embedded_occasions.json</code> کی وجہ سے بغیر انٹرنیٹ کے کام کرتی ہیں۔ آپ ایپ کا ڈیٹا صاف کر کے تمام معلومات حذف کر سکتے ہیں۔ رابطہ: <strong>naram3096@gmail.com</strong>۔</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 7. PUNJABI (pa) -->
-        <!-- ======================================================== -->
-        <div id="lang-pa" class="lang-section">
-            <h1>ਪ੍ਰਾਈਵੇਸੀ ਪਾਲਿਸੀ - Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>ਵਰਜਨ:</strong> 2.0.0<br>
-                <strong>ਆਖਰੀ ਅਪਡੇਟ:</strong> 31 ਮਈ 2026
-            </div>
-            <p>ਇਹ ਪ੍ਰਾਈਵੇਸੀ ਪਾਲਿਸੀ Calendar Converter ਐਪ (<code>com.dbs.dateconverter</code>) ਦੇ ਡੇਟਾ ਪ੍ਰਬੰਧਨ ਬਾਰੇ ਦੱਸਦੀ ਹੈ।</p>
-            
-            <h2>1. ਮੁੱਖ ਜਾਣਕਾਰੀ</h2>
-            <ul>
-                <li><strong>ਡਿਵੈਲਪਰ:</strong> naram3096@gmail.com</li>
-                <li><strong>ਕੋਈ ਅਕਾਊਂਟ ਨਹੀਂ:</strong> ਐਪ ਨੂੰ ਵਰਤਣ ਲਈ ਕਿਸੇ ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ।</li>
-                <li><strong>ਡੇਟਾ ਜੋ ਇਕੱਠਾ ਨਹੀਂ ਕੀਤਾ ਜਾਂਦਾ:</strong> ਅਸੀਂ ਨਾਮ, ਈਮੇਲ, ਫ਼ੋਨ ਨੰਬਰ, ਜਾਂ GPS ਲੋਕੇਸ਼ਨ ਇਕੱਠੀ ਨਹੀਂ ਕਰਦੇ।</li>
-            </ul>
-
-            <h2>2. ਲੋਕਲ ਸਟੋਰੇਜ (ڈیوائس پر)</h2>
-            <p>ਸਾਰੀ ਜਾਣਕਾਰੀ <code>SharedPreferences</code> ਰਾਹੀਂ ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਤੇ ਲੋਕਲ ਸੁਰੱਖਿਅਤ ਰਹਿੰਦੀ ਹੈ:</p>
-            <ul>
-                <li>ਭਾਸ਼ਾ ਦੀ ਚੋਣ (13 ਭਾਸ਼ਾਵਾਂ + ਸਿਸਟਮ ਭਾਸ਼ਾ)।</li>
-                <li>ਥੀਮ ਦੀ ਚੋਣ (ਲਾਈਟ / ਡਾਰਕ / ਆਟੋ)।</li>
-                <li>ਇਸਲਾਮਿਕ ਇਵੈਂਟਸ ਕੈਲੰਡਰ ਦਾ ਲੋਕਲ ਕੈਸ਼।</li>
-                <li>ਐਪ ਰਿਵਿਊ ਕਾਊਂਟਰ।</li>
-            </ul>
-
-            <h2>3. ਸਰਵਿਸਿਜ਼ ਅਤੇ ਪਰਮਿਸ਼ਨ</h2>
-            <p>ਅਸੀਂ ਐਪ ਦੀ ਸਥਿਰਤਾ ਲਈ Firebase Analytics (ਸਕ੍ਰੀਨ ਜਿਵੇਂ <code>converter_tab</code>) ਅਤੇ اشتہارات ਲਈ Google AdMob ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ। ਇਸ਼ਤਿਹਾਰਾਂ ਲਈ Google UMP SDK ਦੀ ਵਰਤੋਂ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਜੋ GDPR ਦੇ ਅਨੁਕੂਲ ਹੈ। ਨੋਟੀਫਿਕੇਸ਼ਨ ਲਈ <code>POST_NOTIFICATIONS</code> ਅਤੇ <code>SCHEDULE_EXACT_ALARM</code> ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ, ਜੋ GPS ਦੀ ਬਜਾਏ ਟਾਈਮ ਜ਼ੋਨ ਤੇ ਕੰਮ ਕਰਦੇ ਹਨ। <code>embedded_occasions.json</code> ਰਾਹੀਂ ਐਪ ਬਿਨਾਂ ਇੰਟਰਨੈੱਟ ਦੇ ਕੰਮ ਕਰ ਸਕਦੀ ਹੈ। ਸੰਪਰਕ: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 8. JAVANESE (jv) -->
-        <!-- ======================================================== -->
-        <div id="lang-jv" class="lang-section">
-            <h1>Kabijakan Privasi - Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>Versi:</strong> 2.0.0<br>
-                <strong>Pembaruan Paling Keri:</strong> 31 Mei 2026
-            </div>
-            <p>Kabijakan Privasi iki nerangake kepiye informasi diatur ing aplikasi Calendar Converter (<code>com.dbs.dateconverter</code>).</p>
-            
-            <h2>1. Umun & Identitas</h2>
-            <ul>
-                <li><strong>Pengembang/Kontroler Data:</strong> naram3096@gmail.com</li>
-                <li><strong>Mboten Wonten Akun:</strong> Mboten mbutuhake login utawi registrasi pangguna.</li>
-                <li><strong>Data Sing MBOTEN Dikumpulake:</strong> Jeneng, email, nomer telpon, utawi lokasi GPS.</li>
-            </ul>
-
-            <h2>2. Panyimpenan Lokal ing Piranti</h2>
-            <p>Data disimpen liwat <code>SharedPreferences</code> lan mboten nate diunggah teng server kita:</p>
-            <ul>
-                <li>Pilihan basa (13 basa + basa sistem).</li>
-                <li>Pilihan tema (Padhang / Peteng / Otomatis).</li>
-                <li>Cache data tanggalan acara Islam.</li>
-                <li>Etungan mbuka aplikasi kanggo panyuwunan rating.</li>
-            </ul>
-
-            <h2>3. Layanan Pihak Katelu lan Idzin</h2>
-            <p>Aplikasi nggunakake Firebase Analytics (kanggo mriksa layar <code>holidays_tab</code>, <code>converter_tab</code>) lan Google AdMob kanggo nuduhake pariwara (App Open, Interstitial, Native). Google bisa ngumpulake ID Pariwara lan alamat IP. Idzin sing dibutuhake yaiku: <code>INTERNET</code>, <code>POST_NOTIFICATIONS</code>, lan <code>SCHEDULE_EXACT_ALARM</code>. Notifikasi nggunakake zona wektu piranti (sanes GPS). Fungsi utama bisa mlaku tanpa internet ngangge file <code>embedded_occasions.json</code>. Sampeyan saged mbusak kabeh data kanthi mbusak data aplikasi ing setelan HP. Hubungi: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 9. TURKISH (tr) -->
-        <!-- ======================================================== -->
-        <div id="lang-tr" class="lang-section">
-            <h1>Gizlilik Politikası - Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>Versiyon:</strong> 2.0.0<br>
-                <strong>Son Güncelleme:</strong> 31 Mayıs 2026
-            </div>
-            <p>Bu Gizlilik Politikası, Calendar Converter (<code>com.dbs.dateconverter</code>) uygulamasındaki veri işlemlerini açıklamaktadır.</p>
-            
-            <h2>1. Genel Bilgiler & Kimlik</h2>
-            <ul>
-                <li><strong>Geliştirici/Veri Sorumlusu:</strong> naram3096@gmail.com</li>
-                <li><strong>Hesap Gerekmez:</strong> Herhangi bir üyelik veya kullanıcı girişi gerekmez.</li>
-                <li><strong>Toplanmayan Veriler:</strong> Ad, e-posta, telefon numarası veya GPS konum verisi toplanmaz.</li>
-            </ul>
-
-            <h2>2. Cihaz İçi Yerel Depolama</h2>
-            <p>Verileriniz <code>SharedPreferences</code> aracılığıyla yerel olarak saklanır ve sunucularımıza gönderilmez:</p>
-            <ul>
-                <li>Dil seçimi (13 dil + sistem dili).</li>
-                <li>Tema seçimi (Açık / Koyu / Sistem varsayılanı).</li>
-                <li>İslami önemli günler takvimi önbelleği.</li>
-                <li>Uygulama açılış sayaçları ve değerlendirme talepleri veri takibi.</li>
-            </ul>
-
-            <h2>3. Üçüncü Taraf Servisler (Yalnızca Android)</h2>
-            <ul>
-                <li><strong>Firebase Analytics & Crashlytics:</strong> Ekran görüntüleme günlüklerini (<code>holidays_tab</code>, <code>converter_tab</code>) ve hata raporlarını analiz eder. Debug modunda kapalıdır.</li>
-                <li><strong>Google AdMob:</strong> App Open, Interstitial, Ödüllü ve Native reklamlar sunar. Reklam Kimliği (ID), IP adresi ve işletim sistemi bilgilerini toplayabilir. GDPR uyumluluğu için Google UMP SDK kullanılır.</li>
-            </ul>
-
-            <h2>4. Bildirimler, İzinler ve Çevrimdışı Çalışma</h2>
-            <p>Yerel bildirimler (Ramazan/Bayramlar) GPS yerine cihazın saat dilimine göre çalışır. Gerekli izinler: <code>INTERNET</code>, <code>POST_NOTIFICATIONS</code>, <code>RECEIVE_BOOT_COMPLETED</code> ve <code>SCHEDULE_EXACT_ALARM</code>. Temel dönüştürme işlevi <code>embedded_occasions.json</code> sayesinde tamamen internetsiz çalışır. Uygulama verilerini temizleyerek tüm yerel geçmişinizi silebilirsiniz. İletişim: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 10. PERSIAN (fa) -->
-        <!-- ======================================================== -->
-        <div id="lang-fa" class="lang-section">
-            <h1>سیاست حفظ حریم خصوصی - Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>نسخه:</strong> 2.0.0<br>
-                <strong>آخرین بروزرسانی:</strong> 31 مه 2026
-            </div>
-            <p>این سیاست حفظ حریم خصوصی نحوه مدیریت اطلاعات در برنامه Calendar Converter (<code>com.dbs.dateconverter</code>) را توضیح می‌دهد.</p>
-            
-            <h2>۱. اطلاعات عمومی و هویت</h2>
-            <ul>
-                <li><strong>توسعه‌دهنده/کنترل‌کننده داده:</strong> naram3096@gmail.com</li>
-                <li><strong>بدون نیاز به حساب کاربری:</strong> هیچ‌گونه ثبت‌نام یا ورود کاربر نیاز نیست.</li>
-                <li><strong>داده‌هایی که جمع‌آوری نمی‌شوند:</strong> نام، ایمیل، شماره تلفن، یا موقعیت مکانی دقیق GPS.</li>
-            </ul>
-
-            <h2>۲. ذخیره‌سازی محلی روی دستگاه</h2>
-            <p>داده‌ها کاملاً به صورت محلی از طریق <code>SharedPreferences</code> ذخیره می‌شوند و هرگز به سرورهای ما ارسال نمی‌شوند:</p>
-            <ul>
-                <li>انتخاب زبان (۱۳ زبان + زبان سیستم).</li>
-                <li>انتخاب پوسته (روشن / تاریک / خودکار سیستم).</li>
-                <li>حافظه پنهان تقویم مناسبت‌های اسلامی.</li>
-                <li>شمارشگرهای اجرای برنامه برای درخواست ثبت امتیاز.</li>
-            </ul>
-
-            <h2>۳. خدمات شخص ثالث و دسترسی‌ها</h2>
-            <p>ما از Firebase Analytics برای بررسی صفحات (مانند <code>converter_tab</code>) و از Firebase Crashlytics برای گزارش خطاهای فنی استفاده می‌کنیم (در حالت Debug غیرفعال است). همچنین Google AdMob برای نمایش تبلیغات (App Open, Interstitial, Native) استفاده می‌شود که شناسه تبلیغاتی و IP را جمع‌آوری می‌کند و از UMP SDK برای سازگاری با GDPR بهره می‌برد. اعلان‌های محلی بر اساس منطقه زمانی دستگاه (نه GPS) تنظیم می‌شوند و به مجوزهای <code>POST_NOTIFICATIONS</code> و <code>SCHEDULE_EXACT_ALARM</code> نیاز دارند. برنامه به لطف فایل <code>embedded_occasions.json</code> به صورت کاملاً آفلاین کار می‌کند. برای حذف داده‌ها، حافظه برنامه را پاک کنید. تماس: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 11. HAUSA (ha) -->
-        <!-- ======================================================== -->
-        <div id="lang-ha" class="lang-section">
-            <h1>Manufofin Tsare Sirri - Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>Fasali:</strong> 2.0.0<br>
-                <strong>Sabuntawa Na Karshe:</strong> 31 Mayu 2026
-            </div>
-            <p>Wannan bayanin tsare sirri yana bayyana yadda ake sarrafa bayanai a cikin manhajjar Calendar Converter (<code>com.dbs.dateconverter</code>).</p>
-            
-            <h2>1. Gabaɗaya & Identity</h2>
-            <ul>
-                <li><strong>Mai Haɓakawa/Mai Kula da Bayanai:</strong> naram3096@gmail.com</li>
-                <li><strong>Babu Bukatar Akwanti:</strong> Ba a buƙatar rajista ko shiga na mai amfani.</li>
-                <li><strong>Bayanan da BA A Tattarawa:</strong> Suna, imel, lambar waya, ko bayanan wurin da kuke na GPS.</li>
-            </ul>
-
-            <h2>2. Ma'ajiyar Cikin Wayar Ku (Local Storage)</h2>
-            <p>Ana adana bayanai ta hanyar <code>SharedPreferences</code> kuma ba a tura su zuwa sabar mu:</p>
-            <ul>
-                <li>Zabin harshe (Harsuna 13 + harshen tsarin waya).</li>
-                <li>Zabin jigo (Fari / Baƙi / Na atomatik).</li>
-                <li>Ma'ajiyar cache na kalandar ranakun muhimmanci na Musulunci.</li>
-                <li>Kididdigar buɗe manhajja don neman ƙidassawa (review).</li>
-            </ul>
-
-            <h2>3. Ayyukan Jam'i Na Uku da Izini</h2>
-            <p>Muna amfani da Firebase Analytics (don lura da fuska kamar <code>holidays_tab</code>, <code>converter_tab</code>) da Google AdMob don nuna tallace-tallace (App Open, Interstitial, Native). Google na iya tattara ID na Talla da adireshin IP. Muna amfani da Google UMP SDK don kiyaye dokokin GDPR. Sanarwa na cikin gida (Notifications) na amfani da yankin lokaci na wayarku (ba GPS ba) kuma yana buƙatar izinin <code>POST_NOTIFICATIONS</code> da kuma <code>SCHEDULE_EXACT_ALARM</code>. Manhajjar na aiki ba tare da intanet ba ta hanyar <code>embedded_occasions.json</code>. Kuna iya goge duk bayanai ta hanyar goge bayanan manhajjar a saitunan wayarku. Tuntuba: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 12. SWAHILI (sw) -->
-        <!-- ======================================================== -->
-        <div id="lang-sw" class="lang-section">
-            <h1>Sera ya Faragha - Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>Toleo:</strong> 2.0.0<br>
-                <strong>Sasisho la Mwisho:</strong> 31 Mei 2026
-            </div>
-            <p>Sera hii ya Faragha inaeleza jinsi maelezo yanavyoshughulikiwa katika programu ya Calendar Converter (<code>com.dbs.dateconverter</code>).</p>
-            
-            <h2>1. Jumla & Utambulisho</h2>
-            <ul>
-                <li><strong>Msanidi Programu/Kidhibiti Data:</strong> naram3096@gmail.com</li>
-                <li><strong>Hakuna Akaunti:</strong> Hakuna usajili au kuingia kwa mtumiaji kunahitajika.</li>
-                <li><strong>Data AMBAZO HAZIKUSANYIWI:</strong> Jina, barua pepe, nambari ya simu, au eneo la GPS.</li>
-            </ul>
-
-            <h2>2. Hifadhi ya Ndani ya Kifaa</h2>
-            <p>Data huhifadhiwa ndani ya kifaa kupitia <code>SharedPreferences</code> na haitumwi kwa seva zetu:</p>
-            <ul>
-                <li>Uchaguzi wa lugha (lugha 13 + lugha ya mfumo).</li>
-                <li>Uchaguzi wa muonekano (Mwangaza / Giza / Kiotomatiki).</li>
-                <li>Hifadhi ya muda ya kalenda ya matukio ya Kiislamu.</li>
-                <li>Kihesabu cha kufungua programu kwa ajili ya kuomba ukaguzi.</li>
-            </ul>
-
-            <h2>3. Huduma za Watu Wengine na Ruhusa</h2>
-            <p>Tunatumia Firebase Analytics (kufuatilia skrini kama <code>converter_tab</code>) na Google AdMob kuonyesha matangazo (App Open, Interstitial, Native). Google inaweza kukusanya ID ya Matangazo na anwani ya IP kulingana na sheria za GDPR kupitia Google UMP SDK. Arifa za ndani ya kifaa hutumia saa za eneo lako (sio GPS) na zinahitaji ruhusa ya <code>POST_NOTIFICATIONS</code> na <code>SCHEDULE_EXACT_ALARM</code>. Programu inafanya kazi kikamilifu bila mtandao kupitia <code>embedded_occasions.json</code>. Unaweza kufuta data yote kwa kufuta data ya programu kwenye mipangilio ya simu yako. Mawasiliano: <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
-        <!-- ======================================================== -->
-        <!-- 13. FRENCH (fr) -->
-        <!-- ======================================================== -->
-        <div id="lang-fr" class="lang-section">
-            <h1>Politique de Confidentialité - Calendar Converter</h1>
-            <div class="meta-info">
-                <strong>Version:</strong> 2.0.0<br>
-                <strong>Dernière mise à jour:</strong> 31 Mai 2026
-            </div>
-            <p>Cette politique de confidentialité décrit la gestion des données au sein de l'application Calendar Converter (<code>com.dbs.dateconverter</code>).</p>
-            
-            <h2>1. Général & Identité</h2>
-            <ul>
-                <li><strong>Développeur/Contrôleur de données:</strong> naram3096@gmail.com</li>
-                <li><strong>Aucun Compte:</strong> Aucune inscription ni connexion requise.</li>
-                <li><strong>Données NON Collectées:</strong> Aucun nom, e-mail, numéro de téléphone ou position GPS.</li>
-            </ul>
-
-            <h2>2. Stockage Local sur l'Appareil</h2>
-            <p>Les données sont stockées localement via <code>SharedPreferences</code> et ne sont jamais transmises à nos serveurs :</p>
-            <ul>
-                <li>Choix de la langue (13 langues + langue système).</li>
-                <li>Choix du thème (Clair / Sombre / Automatique).</li>
-                <li>Cache de la base de données du calendrier des événements islamiques.</li>
-                <li>Compteurs d'ouverture de l'application pour les demandes d'évaluation.</li>
-            </ul>
-
-            <h2>3. Services Tiers (Android Uniquement)</h2>
-            <ul>
-                <li><strong>Firebase Analytics & Crashlytics:</strong> Analyse les vues d'écrans (<code>holidays_tab</code>, <code>converter_tab</code>) et les rapports de plantage. Désactivé en mode Debug.</li>
-                <li><strong>Google AdMob:</strong> Diffuse des annonces App Open, Interstitielles, Récompensées et Natives. Collecte l'ID publicitaire, l'IP et l'OS. Le SDK Google UMP est utilisé pour la conformité RGPD.</li>
-            </ul>
-
-            <h2>4. Notifications, Autorisations & Mode Hors-ligne</h2>
-            <p>Les notifications locales fonctionnent selon le fuseau horaire de l'appareil (pas de GPS). Autorisations requises : <code>INTERNET</code>, <code>POST_NOTIFICATIONS</code>, <code>RECEIVE_BOOT_COMPLETED</code>, et <code>SCHEDULE_EXACT_ALARM</code>. La conversion de base fonctionne hors-ligne via <code>embedded_occasions.json</code>. Vous pouvez effacer l'historique en supprimant les données de l'application. Contact : <strong>naram3096@gmail.com</strong>.</p>
-        </div>
-
+        <h2>6. الإشعارات المحلية والصلاحيات</h2>
+        <p>تتم جدولة الإشعارات محلياً بناءً على المنطقة الزمنية للجهاز (وليس GPS). يطلب التطبيق صلاحيات تقنية فقط مثل <code>INTERNET</code>، <code>POST_NOTIFICATIONS</code>، و <code>SCHEDULE_EXACT_ALARM</code> لضمان عمل التحويل والإشعارات.</p>
     </div>
-</div>
 
-<script>
-    // 1. تحديد اللغات المدعومة داخل الموقع برمجياً
-    const supportedLanguages = ['ar', 'en', 'id', 'ms', 'bn', 'ur', 'pa', 'jv', 'tr', 'fa', 'ha', 'sw', 'fr'];
+    <!-- ============================================== -->
+    <!-- 2. النسخة الإنجليزية (EN) -->
+    <!-- ============================================== -->
+    <div id="content-en" class="lang-content" dir="ltr">
+        <h1>Privacy Policy & Data Safety</h1>
+        <p><strong>Hijri/Gregorian Date Converter</strong><br>
+        <strong>Package Name:</strong> <code>com.dbs.dateconverter</code><br>
+        <strong>Version:</strong> 2.0.0<br>
+        <strong>Last Updated:</strong> May 31, 2026</p>
+
+        <p>We deeply respect your privacy. This policy explains how our app handles data. By using the app, you agree to these practices.</p>
+
+        <h2>1. General Information</h2>
+        <ul>
+            <li><strong>App Identity:</strong> A tool for date conversion and Islamic occasions.</li>
+            <li><strong>No Accounts:</strong> The app does not require any login or account creation.</li>
+            <li><strong>Data we DO NOT collect:</strong> We never collect names, emails, phones, or GPS locations.</li>
+            <li><strong>Contact:</strong> [naram3096@gmail.com]</li>
+        </ul>
+
+        <h2>2. Local Data Storage</h2>
+        <p>The app uses <code>SharedPreferences</code> to store data locally on your device only:</p>
+        <ul>
+            <li>Language and Theme preferences.</li>
+            <li>Occasions cache and app-rating counter.</li>
+        </ul>
+
+        <h2>3. Firebase Services (Android)</h2>
+        <ul>
+            <li><strong>Analytics:</strong> For aggregated, anonymous usage stats.</li>
+            <li><strong>Crashlytics:</strong> To report technical crashes and bugs.</li>
+            <li><strong>Remote Config:</strong> To fetch remote settings.</li>
+        </ul>
+
+        <h2>4. Ads — Google AdMob</h2>
+        <p>We use AdMob (App Open, Interstitial, Native). Google may collect Advertising ID, IP, and device info. We use Google's UMP SDK for user consent regarding personalized ads.</p>
+
+        <h2>5. Third-Party Services</h2>
+        <ul>
+            <li><strong>AlAdhan API:</strong> To fetch Gregorian dates (no personal data sent).</li>
+            <li><strong>Google Fonts:</strong> Fetched from Google servers (may send IP).</li>
+            <li><strong>Wikipedia:</strong> Displayed via WebView (subject to Wikimedia policy).</li>
+        </ul>
+
+        <h2>6. Notifications & Permissions</h2>
+        <p>Notifications are scheduled locally using the device's timezone (not GPS). The app requests technical permissions like <code>INTERNET</code>, <code>POST_NOTIFICATIONS</code>, and <code>SCHEDULE_EXACT_ALARM</code>.</p>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- 3. باقي اللغات (قوالب جاهزة لوضع الترجمة) -->
+    <!-- ============================================== -->
     
-    // 2. اللغات التي تُقرأ من اليمين إلى اليسار (RTL)
-    const rtlLanguages = ['ar', 'ur', 'fa'];
+    <div id="content-id" class="lang-content" dir="ltr">
+        <h1>Kebijakan Privasi</h1>
+        <p><em>(Please insert the Indonesian translation here)</em></p>
+    </div>
 
-    // 3. قراءة المعامل ?lang= من الرابط الخاص بـ WebView
-    const urlParams = new URLSearchParams(window.location.search);
-    let currentLang = urlParams.get('lang');
+    <div id="content-ms" class="lang-content" dir="ltr">
+        <h1>Dasar Privasi</h1>
+        <p><em>(Please insert the Malay translation here)</em></p>
+    </div>
 
-    // 4. إذا لم يتم إرسال معامل اللغة أو كانت اللغة غير مدعومة، يتم الاعتماد على الإنجليزية كلغة افتراضية
-    if (!currentLang || !supportedLanguages.includes(currentLang.toLowerCase())) {
-        currentLang = 'en';
-    }
+    <div id="content-bn" class="lang-content" dir="ltr">
+        <h1>গোপনীয়তা নীতি</h1>
+        <p><em>(Please insert the Bengali translation here)</em></p>
+    </div>
 
-    currentLang = currentLang.toLowerCase();
+    <div id="content-ur" class="lang-content" dir="rtl">
+        <h1>رازداری کی پالیسی</h1>
+        <p><em>(Please insert the Urdu translation here)</em></p>
+    </div>
 
-    // 5. ضبط خصائص العرض التلقائي لوسم الـ HTML (اللغة والاتجاه)
-    document.documentElement.lang = currentLang;
-    if (rtlLanguages.includes(currentLang)) {
-        document.documentElement.dir = 'rtl';
-    } else {
-        document.documentElement.dir = 'ltr';
-    }
+    <div id="content-pa" class="lang-content" dir="ltr">
+        <h1>ਪਰਦੇਦਾਰੀ ਨੀਤੀ</h1>
+        <p><em>(Please insert the Punjabi translation here)</em></p>
+    </div>
 
-    // 6. إظهار قسم السياسة الخاص باللغة المطلوبة فقط وإخفاء الباقي
-    const activeSection = document.getElementById('lang-' + currentLang);
-    if (activeSection) {
-        activeSection.style.display = 'block';
-    }
-</script>
+    <div id="content-jv" class="lang-content" dir="ltr">
+        <h1>Kebijakan Privasi</h1>
+        <p><em>(Please insert the Javanese translation here)</em></p>
+    </div>
 
+    <div id="content-tr" class="lang-content" dir="ltr">
+        <h1>Gizlilik Politikası</h1>
+        <p><em>(Please insert the Turkish translation here)</em></p>
+    </div>
+
+    <div id="content-fa" class="lang-content" dir="rtl">
+        <h1>سیاست حفظ حریم خصوصی</h1>
+        <p><em>(Please insert the Persian translation here)</em></p>
+    </div>
+
+    <div id="content-ha" class="lang-content" dir="ltr">
+        <h1>Manufar Keɓantawa</h1>
+        <p><em>(Please insert the Hausa translation here)</em></p>
+    </div>
+
+    <div id="content-sw" class="lang-content" dir="ltr">
+        <h1>Sera ya Faragha</h1>
+        <p><em>(Please insert the Swahili translation here)</em></p>
+    </div>
+
+    <div id="content-fr" class="lang-content" dir="ltr">
+        <h1>Politique de confidentialité</h1>
+        <p><em>(Please insert the French translation here)</em></p>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- سكريبت تبديل اللغة بناءً على الرابط -->
+    <!-- ============================================== -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 1. استخراج معامل اللغة من الرابط، مثلاً: ?lang=ar
+            const urlParams = new URLSearchParams(window.location.search);
+            let currentLang = urlParams.get('lang');
+
+            // 2. قائمة اللغات المدعومة
+            const supportedLangs = ['ar', 'en', 'id', 'ms', 'bn', 'ur', 'pa', 'jv', 'tr', 'fa', 'ha', 'sw', 'fr'];
+            
+            // 3. التحقق من وجود اللغة، وإلا نجعل الإنجليزية الافتراضية
+            if (!currentLang || !supportedLangs.includes(currentLang)) {
+                currentLang = 'en'; // لغة افتراضية
+            }
+
+            // 4. إظهار الـ Div الخاص باللغة المحددة وإخفاء الباقي
+            const allContents = document.querySelectorAll('.lang-content');
+            allContents.forEach(function(element) {
+                element.classList.remove('active');
+            });
+
+            const selectedContent = document.getElementById('content-' + currentLang);
+            if (selectedContent) {
+                selectedContent.classList.add('active');
+            }
+
+            // 5. ضبط اتجاه الصفحة (RTL / LTR) بناءً على اللغة
+            const rtlLangs = ['ar', 'ur', 'fa']; // اللغات التي تُكتب من اليمين لليسار
+            if (rtlLangs.includes(currentLang)) {
+                document.documentElement.setAttribute('dir', 'rtl');
+                document.documentElement.setAttribute('lang', currentLang);
+            } else {
+                document.documentElement.setAttribute('dir', 'ltr');
+                document.documentElement.setAttribute('lang', currentLang);
+            }
+        });
+    </script>
 </body>
 </html>
