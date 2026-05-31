@@ -55,12 +55,6 @@
             margin-top: 24px;
         }
 
-        h3 {
-            font-size: 16px;
-            margin-top: 16px;
-            color: var(--text-color);
-        }
-
         p, ul {
             margin-bottom: 12px;
         }
@@ -128,122 +122,47 @@
     
     <div class="meta-info">
         <p><span class="badge">Application:</span> Hijri/Gregorian Date Converter (Date Converter)</p>
-        <p><span class="badge">Package Name:</span> com.dbs.dateconverter</p>
-        <p><span class="badge">Version:</span> 2.0.0</p>
         <p><span class="badge">Last Updated:</span> May 31, 2026</p>
     </div>
 
-    <p>We fully value and respect your privacy. This Privacy Policy is designed to help you understand the nature of the data our application interacts with, how it is processed, and what your rights are. By using the application, you agree to the practices outlined in this policy.</p>
+    <p>We deeply value your privacy. This policy outlines how our application interacts with data, ensuring a transparent and secure user experience. By using the app, you consent to the practices described herein.</p>
 
-    <h2>1. General Information & App Identity</h2>
+    <h2>1. General Information & Identity</h2>
     <ul>
-        <li><strong>App Identity:</strong> The "Hijri/Gregorian Date Converter" application, registered under the package name <code>com.dbs.dateconverter</code>, is a tool that allows users to convert dates between the Hijri and Gregorian calendars, browse Islamic occasions, and receive related notifications.</li>
-        <li><strong>No Accounts Required:</strong> The app does not require any login, nor does it force the user to create an account to use it.</li>
-        <li><strong>Data We Never Collect:</strong> The app does not collect or request any sensitive personal data such as full name, email address, phone number, or precise geographical location via GPS.</li>
-        <li><strong>Data Controller & Contact:</strong> For any inquiries or feedback regarding privacy, you can contact the developer directly via email at: <a href="mailto:naram3096@gmail.com">naram3096@gmail.com</a>.</li>
+        <li><strong>App Function:</strong> A dedicated utility to convert dates between the Hijri and Gregorian calendars, browse Islamic occasions, and receive related localized notifications.</li>
+        <li><strong>No User Accounts:</strong> The app operates fully without requiring any user registration, accounts, or personal logins.</li>
+        <li><strong>No Sensitive Data Collection:</strong> We strictly do not collect, request, or store personal identifiers such as your full name, email address, phone number, or precise GPS location.</li>
+        <li><strong>Contact:</strong> For privacy concerns, reach out to the developer directly at: <a href="mailto:naram3096@gmail.com">naram3096@gmail.com</a>.</li>
     </ul>
 
-    <h2>2. Locally Stored Data (Local Storage)</h2>
-    <p>The app utilizes Android's local storage technology via <code>SharedPreferences</code>. All of this data is stored strictly within your device and is never uploaded to any external servers owned by us:</p>
-    <ul>
-        <li>Your preferred app language selection (the app supports 13 different languages + the system default language).</li>
-        <li>Your preferred app theme and appearance (Light / Dark / System Default).</li>
-        <li>Locally cached data for the Islamic occasions calendar.</li>
-        <li>An embedded counter to track the number of times the app has been launched (aimed at displaying a smart app review request).</li>
-        <li>A timestamp log of the last shown review request to prevent user annoyance.</li>
-    </ul>
+    <h2>2. Local Storage & Data Retention</h2>
+    <p>The application stores essential configuration data locally on your device via <code>SharedPreferences</code> to retain user preferences. This data is never uploaded to external servers.</p>
     <div class="note">
-        <strong>💡 Note:</strong> You can wipe all of this data instantly at any time by going to your device settings and selecting "Clear Data" for this app.
+        <strong>🕒 Data Retention Note:</strong> To ensure maximum privacy and optimal device performance, all locally cached technical settings, counters, and temporary event data are scheduled to be automatically deleted after 90 days of inactivity.
     </div>
 
-    <h2>3. Firebase Services (Android Version Only)</h2>
-    <p>The Android version of the app integrates the Google Firebase SDK to improve performance and analyze errors. It operates as follows:</p>
+    <h2>3. Third-Party Services & Analytics</h2>
+    <p>We integrate reliable core third-party SDKs to improve application quality, analyze technical stability, and support development through advertisements:</p>
     <ul>
-        <li><strong>Firebase Analytics:</strong> Used to understand aggregated, anonymous statistics such as (app opens, session duration), and to monitor visited screens to enhance user experience. Examples include the holidays tab (<code>holidays_tab</code>), converter tab (<code>converter_tab</code>), settings screen (<code>settings</code>), and the occasions browser (<code>occasions_browser</code>).</li>
-        <li><strong>Firebase Crashlytics:</strong> Sends encrypted reports when an unexpected crash occurs. These reports include error details (stack traces) and general technical information about the device type and operating system to help fix the issue.</li>
-        <li><strong>Firebase Remote Config:</strong> Used to safely fetch configuration settings remotely, such as updating the link to this Privacy Policy page.</li>
-        <li><strong>Development Environment:</strong> Firebase data collection is automatically and fully disabled during development mode (Debug Mode) to maintain data accuracy and cleanliness.</li>
+        <li><strong>Google Firebase (Analytics & Crashlytics):</strong> Monitors generalized, aggregated app performance metrics and receives encrypted technical logs following unexpected crashes to facilitate debug fixes.</li>
+        <li><strong>Google AdMob:</strong> Serves standard contextual advertisements. Google automatically processes technical attributes such as your device's Advertising ID and IP address. A compliant consent mechanism (UMP SDK) is active to handle user choices regarding ad personalization.</li>
+        <li><strong>AlAdhan API & Wikipedia:</strong> Used strictly to fetch calendar parameters and event context without passing or linking personal telemetry.</li>
     </ul>
 
-    <h2>4. Advertisements — Google AdMob</h2>
-    <p>The application includes advertisements supported by the Google AdMob network to help maintain and develop the application for free. This includes the following ad types:</p>
+    <h2>4. System Permissions</h2>
+    <p>The app requests the following core system permissions for structural functionality only:</p>
     <ul>
-        <li><strong>App Open Ads:</strong> Displayed when the application is launched.</li>
-        <li><strong>Interstitial Ads:</strong> Displayed after the user performs a specific number of actions inside the app.</li>
-        <li><strong>Rewarded Interstitial Ads:</strong> Displayed optionally before sharing results (if enabled).</li>
-        <li><strong>Native Ads:</strong> Integrated seamlessly and elegantly within the occasions screen.</li>
-    </ul>
-    <h3>Data Collected by Google AdMob:</h3>
-    <p>The Google network collects the device's Advertising ID, IP address, device type, and operating system version to provide advertising features and analytics.</p>
-    <p><strong>User Consent & GDPR:</strong> We utilize Google's official consent form (UMP SDK) to provide choices for users (particularly in the European Union) to either consent to or decline personalized advertisements.</p>
-
-    <h2>5. Third-Party Services</h2>
-    <p>The application integrates with some external services to deliver its core functionalities:</p>
-    <ul>
-        <li><strong>AlAdhan API:</strong> Used to fetch the Gregorian calendar and its Islamic correspondence. This connection is established without transmitting any personal user data.</li>
-        <li><strong>Google Fonts:</strong> Certain graphical fonts are loaded from Google servers, which may automatically transmit your technical IP address to Google servers during the font fetch.</li>
-        <li><strong>Wikipedia:</strong> Detailed information about certain occasions is displayed by opening Wikipedia pages inside an internal WebView. Your browsing here is subject to the separate privacy policy of the Wikimedia Foundation.</li>
-        <li><strong>Google Play In-App Review:</strong> The in-app rating feature is handled entirely through a secure API provided by the Google Play Store.</li>
-        <li><strong>Share Feature:</strong> Allows you to share date conversion results. This process is handled via your operating system and the external applications you personally choose (e.g., WhatsApp, Telegram, etc.).</li>
-        <li><strong>Clipboard:</strong> Allows you to copy conversion results, which is a localized process happening entirely within your device's system.</li>
+        <li><code>INTERNET</code> & <code>ACCESS_NETWORK_STATE</code>: Required to establish safe connections for calendar updates and ad fetching.</li>
+        <li><code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code> & <code>RECEIVE_BOOT_COMPLETED</code>: Used to correctly time local reminders for Islamic occasions based entirely on your device's local clock configuration, without processing physical tracking coordinates.</li>
     </ul>
 
-    <h2>6. Local Notifications System</h2>
-    <ul>
-        <li>The application sends local notifications and reminders for Islamic occasions (such as Ramadan, Eid, and other events).</li>
-        <li>These notifications are scheduled locally on your device. Their timing relies on the time zone configured on your device rather than tracking your GPS location.</li>
-        <li>The application explicitly requests permission to send notifications, and you can revoke this permission at any time through your system settings.</li>
-    </ul>
-
-    <h2>7. App Permissions</h2>
-    <p>The application requests the following Android permissions strictly for technical necessity:</p>
-    <ul>
-        <li><code>INTERNET</code>: To connect to the internet to fetch occasions, advertisements, and fonts.</li>
-        <li><code>ACCESS_NETWORK_STATE</code>: To check whether the device is connected to the internet before performing operations.</li>
-        <li><code>POST_NOTIFICATIONS</code>: To send occasion reminder notifications (on modern operating systems).</li>
-        <li><code>RECEIVE_BOOT_COMPLETED</code>: To automatically reschedule occasion notifications when your device restarts.</li>
-        <li><code>SCHEDULE_EXACT_ALARM</code> / <code>USE_EXACT_ALARM</code>: To ensure notification alerts trigger precisely on time without system-imposed delays.</li>
-    </ul>
-
-    <h2>8. Internet Connectivity & Offline Capabilities</h2>
-    <ul>
-        <li>The core date conversion functionality works completely <strong>Offline</strong> (without an internet connection).</li>
-        <li>The application contains a locally embedded file (<code>embedded_occasions.json</code>) containing essential occasion data to operate offline.</li>
-        <li>The application requires an internet connection only when: syncing and updating new occasion dates for the current year, downloading fonts, and loading advertisements.</li>
-    </ul>
-
-    <h2>9. External Links</h2>
-    <p>The application may contain links leading to external websites, such as:</p>
-    <ul>
-        <li>The Privacy Policy page (fetched via Remote Config and displayed in a WebView).</li>
-        <li>Educational Wikipedia pages for occasions.</li>
-        <li>The Google Play Store to rate the app.</li>
-    </ul>
-    <p>We are not responsible for the content or privacy policies of those external websites and recommend reading their respective policies.</p>
-
-    <h2>10. Legal Rights, Security, and Children's Privacy</h2>
-    <h3>User Rights & Data Deletion:</h3>
-    <p>Since we do not collect any data on our servers, your right to delete data is fulfilled entirely by you through clearing the app data or uninstalling it, which immediately removes the local <code>SharedPreferences</code> file. You can also withdraw notification consent or customize ads via the app and system settings.</p>
-
-    <h3>Data Retention Period:</h3>
-    <p>Local data remains on your device as long as the application is installed. Aggregated technical data collected by Google (such as Firebase and AdMob) is retained and discarded in accordance with the periods specified in Google's privacy policy.</p>
-
-    <h3>Data Security & International Transfers:</h3>
-    <p>We are committed to protecting your local data. Technical non-personal data (such as the Advertising ID or crash reports) is transferred and processed on secure Google servers, which may be located outside your country of residence (such as the United States), adhering to their highest certified security standards.</p>
-
-    <h3>Children's Privacy:</h3>
-    <p>This application does not collect any data from anyone and is intended for the general public. We do not knowingly collect any information from children under the age of 13.</p>
-
-    <h3>Changes to this Privacy Policy:</h3>
-    <p>We may update this Privacy Policy from time to time to keep pace with software updates or legal requirements. Any changes will be posted on this page with an updated "Last Updated" date at the top.</p>
-
-    <h2>11. Third-Party Privacy Policy Links</h2>
-    <p>For more details on how service providers process your data, please visit the following links:</p>
+    <h2>5. Privacy Policy Links</h2>
+    <p>For more detailed insights into how our core third-party service providers handle data, please refer to their statements below:</p>
     <div class="links-list">
         <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>
         <a href="https://support.google.com/admob/answer/6128543" target="_blank">Google AdMob Policies</a>
         <a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase Privacy and Security</a>
-        <a href="https://meta.wikimedia.org/wiki/Privacy_policy" target="_blank">Wikimedia Foundation - Wikipedia Privacy Policy</a>
+        <a href="https://meta.wikimedia.org/wiki/Privacy_policy" target="_blank">Wikimedia Foundation Privacy Policy</a>
     </div>
 
 </div>
